@@ -28,8 +28,29 @@
   }
 
   h1 {
+    @include bold-36;
 
+    @include media (mobile) {
+      margin-top: $gutter-half;
+      margin-bottom: $gutter-half;
+    }
+
+    margin-bottom: $gutter;
+  }
+
+  h2 {
     @include bold-27;
+
+    @include media (mobile) {
+      margin-top: $gutter-half;
+      margin-bottom: $gutter-half;
+    }
+
+    margin-bottom: $gutter;
+  }
+
+  h3 {
+    @include bold-24;
 
     @include media (mobile) {
       margin-top: $gutter-half;

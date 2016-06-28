@@ -1,0 +1,27 @@
+// Slides layout
+// ==========================================================================
+
+.slides.slides-2 {
+
+  background-color: $white;
+  color: $mainstream-brand;
+
+  border: solid $mainstream-brand $gutter-one-third;
+
+  .actions {
+    .button {
+      background: $mainstream-brand;
+      color: $white;
+    }
+  }
+
+  details {
+    summary {
+      color: $mainstream-brand;
+    }
+
+    .panel {
+      border-left-color: $mainstream-brand;
+    }
+  }
+}

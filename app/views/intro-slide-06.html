@@ -1,0 +1,25 @@
+{% extends "layout_slide.html" %}
+
+{% block page_title %}
+  Hidden text
+{% endblock %}
+
+{% block slide_content %}
+
+<div class="column-two-thirds">
+  <h1>Heading level 1</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel mollitia sequi dignissimos ex reiciendis incidunt.</p>
+
+  <details role="group">
+    <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+      <span class="summary">Where you can use your identity account</span>
+    </summary>
+
+    <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus assumenda, saepe, dolore nostrum, officiis, nam eaque dolorem amet magnam deserunt laborum fuga odio placeat quam sint iste ex fugiat adipisci!</p>
+    </div>
+  </details>
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block page_content %}
+  <div class="content-inner slides">
+    <div class="grid-row">
+    {% block slide_content %}{% endblock %}
+    </div>
+  </div>
+
+  <p>
+    <a href="javascript:changeVersion(1);">Version 1</a>
+    /
+    <a href="javascript:changeVersion(2);">Version 2</a>
+  </p>
+
+  <script>
+    function changeVersion (v) {
+      var $slides = $('.slides');
+
+      if (v == 2) {
+        $slides.addClass('slides-2');
+      } else {
+        $slides.removeClass('slides-2');
+      }
+    }
+  </script>
+
+{% endblock %}
