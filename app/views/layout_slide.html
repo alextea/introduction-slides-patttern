@@ -16,11 +16,24 @@
   <script>
     function changeVersion (v) {
       var $slides = $('.slides');
+      var $img = $slides.find('img');
 
       if (v == 2) {
         $slides.addClass('slides-2');
+
+        var src = $img.attr('src').replace('govuk-verify.png', 'govuk-verify-black.png');
+        var srcset = $img.attr('srcset').replace('govuk-verify.svg', 'govuk-verify-black.svg');
+
+        $img.attr('src', src);
+        $img.attr('srcset', srcset);
       } else {
         $slides.removeClass('slides-2');
+
+        var src = $img.attr('src').replace('govuk-verify-black.png', 'govuk-verify.png');
+        var srcset = $img.attr('srcset').replace('govuk-verify-black.svg', 'govuk-verify.svg');
+
+        $img.attr('src', src);
+        $img.attr('srcset', srcset);
       }
     }
   </script>
