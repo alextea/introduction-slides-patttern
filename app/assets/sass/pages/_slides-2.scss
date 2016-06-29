@@ -8,6 +8,16 @@
 
   border: solid $mainstream-brand $gutter-one-third;
 
+  padding: $gutter-two-thirds;
+
+  @include media(tablet) {
+    padding: 35px;
+  }
+
+  @include media(desktop) {
+    padding: 65px 60px;
+  }
+
   .actions {
     .button {
       background: $mainstream-brand;
